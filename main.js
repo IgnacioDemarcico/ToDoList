@@ -1,4 +1,11 @@
+const mostrarArray = arr => console.log(`Array:${arr.map(e => " " + e)}`)
+
+
 var notas = 0
+
+const arrayToDo = []
+const arrayGuardado = []
+const arrayTildado = []
 
 const añadir = (clear = true) => {
 document.getElementById("chekbox").innerHTML += `
@@ -10,9 +17,26 @@ document.getElementById("chekbox").innerHTML += `
 <button type="button" class="btn btn-danger" onclick="eliminar(${notas})">Eliminar</button>
 </li>
 `
+
 if(clear) document.getElementById("nota").value = ""
 notas++
+
+
+
+
+//const time = document.getElementById("time")
+//time.firstChild.nodeValue = event.timeStamp
+arrayToDo.push(document.getElementById("nota").value)
+arrayGuardado.push(event.timeStamp)
+mostrarArray(arrayToDo)
+mostrarArray(arrayGuardado)
 }
 
 
+
+
 const eliminar = id => document.getElementById(`lista-${id}`).remove()
+
+
+
+
