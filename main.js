@@ -15,10 +15,10 @@ arrayToDo.push(document.getElementById("nota").value)
 document.getElementById("chekbox").innerHTML += `
 <li class="fecha list-group-item element " id="lista-${notas}">
 <div class="content">
-<button type="button" class="btn btn-primary" data-bs-toggle="button" onclick="tachar(${notas})">Toggle button</button>
-<label id="tachar" class="form-check-label" for="firstCheckbox">${document.getElementById("nota").value}</label>
+<button type="button" class="btn btn-danger texto1" onclick="eliminar(${notas})">Eliminar</button>
+<input class="form-check-input texto1" type="checkbox"onclick="tachar(${notas})" id="flexCheckDefault">
+<label id="tachar" class="form-check-label texto1" for="flexCheckDefault">${document.getElementById("nota").value}</label>
 </div>
-<button type="button" class="btn btn-danger" onclick="eliminar(${notas})">Eliminar</button>
 </li>
 `
 if(clear) document.getElementById("nota").value = ""
