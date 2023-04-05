@@ -47,7 +47,7 @@ function tachar(id) {
     mostrarArray(arrayId)
 }
 
-const MasChico = () => document.getElementById("maschico").innerHTML = `el primero en terminar fue ${arrayToDo[arrayId[0]]} en ${Math.round(arrayTildado[0])}`
+const MasChico = () => document.getElementById("maschico").innerHTML = `La primer tarea en ser terminada fue ${arrayToDo[arrayId[0]]} en un tiempo de ${Math.round(arrayTildado[0])}`
 
 
 function eliminar(id){ 
