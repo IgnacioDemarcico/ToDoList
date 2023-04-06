@@ -76,7 +76,6 @@ body {
 }
 
 .maschicoestilo {
-    text-align: center;
     color: aliceblue;
 }
 
@@ -84,6 +83,7 @@ body {
     max-height: 1rem;
     align-items: end;
 }
+
 
 .tamañodeletraparabotones {
     text-align: center;
