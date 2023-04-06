@@ -32,7 +32,6 @@ body {
     gap: 1rem;
     padding: 1rem;
 }
-<<<<<<< HEAD
 
 @font-face {
     font-family: startfont;
@@ -113,5 +112,3 @@ body {
 .contenidogeneral{
     margin: 4%; margin-top: 1%; display: flex; justify-content: center;
 }
-=======
->>>>>>> 769c70ae8505bc8ec724c03f2866f140a9173b7f
