@@ -14,10 +14,14 @@ nota.push(document.getElementById("nota").value)
 arrayToDo.push(document.getElementById("nota").value)
 document.getElementById("chekbox").innerHTML += `
 <li class="fecha list-group-item element " id="lista-${notas}">
-<div class="content">
-<button type="button" class="btn btn-danger texto1" onclick="eliminar(${notas})">Eliminar</button>
+<div class="content justify">
 <input class="form-check-input texto1" type="checkbox"onclick="tachar(${notas})" id="flexCheckDefault">
 <label id="tachar" class="form-check-label texto1" for="flexCheckDefault">${document.getElementById("nota").value}</label>
+
+<a onclick="eliminar(${notas})"})'>
+    <img src="/img/iconTacho.png" class="iconbasura">
+</a>
+
 </div>
 </li>
 `
@@ -47,7 +51,7 @@ function tachar(id) {
     mostrarArray(arrayId)
 }
 
-const MasChico = () => document.getElementById("maschico").innerHTML = `el primero en terminar fue ${arrayToDo[arrayId[0]]} en ${arrayTildado[0]}`
+const MasChico = () => document.getElementById("maschico").innerHTML = `La primer tarea en ser terminada fue ${arrayToDo[arrayId[0]]} en un tiempo de ${Math.round(arrayTildado[0])}`
 
 
 function eliminar(id){ 
