@@ -12,24 +12,19 @@
 </head>
 
 <body>
-  <h1 class="titulofont">TODO LIST</h1>
-  <div class="row card-body p-4 contenidogeneral">
-    
-    <!--<div class="col-4"></div>-->
-
-    <div class="col-4 contenido">
-      
-      <textarea class="texto1 form-control textofontb inputtamaño" id="nota" rows="3"></textarea>
-
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 lista">
+      <textarea class="texto form-control" id="nota" rows="3"></textarea>
       <div class="boton row">
-        <button type="button" class="btn btn-success textofontb tamañodeletraparabotones" onclick="añadir()">Añadir nota</button>
-        <button type="button" class="btn btn-success textofontb tamañodeletraparabotones" onclick="MasChico()">Más rápido</button>
-        <h3 id="maschico" class="maschicoestilo"></h3>
-        <ul class="list-group textofontb tamañodeletraparabotones" id="chekbox">
-          <li class="list-group-item active" aria-current="true">Lista de cosas para hacer</li>
-        </ul>
-      </div>
-
+        <button type="button" class="btn btn-success" onclick="añadir()">Añadir la nota</button>
+        <h1></h1>
+        <button type="button" class="btn btn-success" onclick="MasChico()">mas chico</button>
+        <h3 id="maschico"></h3>
+      <ul class="list-group" id="chekbox">
+        <li class="list-group-item active" aria-current="true">Lista de cosas para hacer</li>
+      </ul>
+    </div>
     </div>
   </div>
 
